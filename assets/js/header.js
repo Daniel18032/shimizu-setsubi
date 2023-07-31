@@ -21,6 +21,7 @@ $(function() {
 	});
 });
 
+
 $(function() {
 	$(window).on('load scroll', function() {
 		var scrollPos = $(this).scrollTop();
@@ -28,6 +29,18 @@ $(function() {
 			$('.header__main-content-inner-button a').addClass('is-animation');
 		} else {
 			$('.header__main-content-inner-button a').removeClass('is-animation');
+		}
+	});
+});
+
+
+$(function() {
+	$(window).on('load scroll', function() {
+		var scrollPos = $(this).scrollTop();
+		if ( scrollPos > 100 ) {
+			$('.header__menu').addClass('is-animation');
+		} else {
+			$('.header__menu').removeClass('is-animation');
 		}
 	});
 });

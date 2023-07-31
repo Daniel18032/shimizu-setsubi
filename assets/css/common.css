@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 html {
-  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  font-size: 62.5%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -10,59 +10,11 @@ body {
   font-family:  'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
   font-weight: 400;
   font-size: 1.6em;
-  line-height: 2.4rem;
+  line-height: 2.4;
 }
 /* a:hover {
   opacity: 0.5;
 } */
-.none {
-  display: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-a:visited {
-  color: inherit;
-}
-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-p {
-  font-size: 16px;
-  line-height: 34px;
-  letter-spacing: 2px;
-  font-weight: 500;
-}
-@media screen and (max-width:900px) {
-  p {
-    font-size: 14px;
-    line-height: 30px;
-    letter-spacing: 1px;
-  }
-}
 
 
 
-
-
-.wrapper1260 {
-  max-width: 1260px;
-  padding: 0 90px;
-  margin: 0 auto;
-}
-@media screen and (max-width:900px) {
-  .wrapper1260 {
-    padding: 0 8%;
-    margin: 0 auto;
-  }
-}
-
-
-/* body {
-	display: none; 
-}
-*/
