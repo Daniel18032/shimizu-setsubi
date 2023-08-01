@@ -17,11 +17,6 @@ $media-tablet: 768px;
       @content;
     }
 }
-// @mixin sp {
-//     @media only screen and (max-width: $media-sp) {
-//       @content;
-//     }
-// }
 
 
 /* ================================================
@@ -48,18 +43,22 @@ $spDesignSize: 375;
 // カラー設計
 $color-main : #039CFC;
 $color-sub: #45B8FF;
-$color-telephoneButton: #44B8FF;
-$color-mainButton: #039CFB;
 $color-asort : #0086D9;
 $color-base : #252A36;
 $color-bg : #F5F8FA;
 $color-red : #EF0C0C;
 $color-font-normal : #1e1e1e;
+$color-font-copy : #B7B7B7;
+$color-font-privacy : #676767;
+$color-telephoneButton: #44B8FF;
+$color-mainButton: #039CFB;
 $color-numbering : #4DBBFF;
 $color-strengths-number-even : #D3DDE3;
 $color-white : #ffffff;
-$color-font-copy : #B7B7B7;
 $color-tableBorder : #DEE9EF;
+$color-privacy-border : #E9F2F8;
+$color-nav-box : #414C65;
+
 
 
 
@@ -75,7 +74,7 @@ $color-tableBorder : #DEE9EF;
     color: $color-font-normal;
     @include tablet() {
         font-size: 1.4rem;
-        line-height: 1.8;
+        line-height: 2;
     }
 }
 @mixin font-topHeading {
@@ -172,7 +171,7 @@ $color-tableBorder : #DEE9EF;
     padding-left: 2.8rem;
     margin-bottom: 2.2rem;
     @include tablet {
-        font-size: 3rem;
+        font-size: 2.2rem;
         letter-spacing: 0.1rem;
         padding-left: 2.2rem;
         margin-bottom: 2rem;
@@ -192,6 +191,17 @@ $color-tableBorder : #DEE9EF;
             width: 1.4rem;
             height: 1.4rem;
         }
+    }
+}
+@mixin font-pageh4 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: 600;
+    color: $color-font-normal;
+    letter-spacing: 0.1rem;
+    @include tablet {
+        font-size: 1.6rem;
     }
 }
 @mixin font-pageTableTh {
@@ -722,7 +732,8 @@ html{
                             }
                         }
                         &-contact {
-
+                            color: $color-white;
+                            background-color: $color-nav-box;
                         }
                     }
                 }
@@ -1177,14 +1188,14 @@ html{
         display: flex;
         @include tablet {
             display: block;
-            padding-top: svw(40);
-            padding-bottom: svw(27);
+            padding-top: 4rem;
+            padding-bottom: 2.7rem;
             background-color: $color-asort;
         }
         h2 {
             @include font-topHeading;
             @include tablet {
-                padding-bottom: svw(42);
+                padding-bottom: 4.2rem;
             }
         }
         h3 {
@@ -1196,8 +1207,8 @@ html{
         }
         & .title {
             background-color: $color-asort;
-            width: vw(566);
-            height: vw(408);
+            width: 56.6rem;
+            height: 40.8rem;
             @include tablet {
                 width: 100%;
                 height: auto;
@@ -1212,97 +1223,95 @@ html{
                 margin-right: auto;
                 height: 100%;
                 @include tablet {
-                    margin-left: svw(24);
+                    margin-left: 2.4rem;
                     width: auto;
                 }
                 & .head {
                     display: flex;
                     align-items: center;
-                    gap: vw(8);
-                    padding-bottom: vw(10);
+                    gap: 0.8rem;
+                    padding-bottom: 1rem;
                     color: #ffffff;
                     @include tablet {
-                        padding-bottom: svw(16);
-                        gap: svw(8);
-                        font-size: svw(12);
-                        letter-spacing: svw(1);
+                        padding-bottom: 1.6rem;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.1rem;
                     }
                     &__border {
                         display: inline-block;
-                        height: vw(1);
-                        width: vw(50);
+                        height: 0.1rem;
+                        width: 5rem;
                         background-color: #ffffff;
                         @include tablet() {
-                            height: svw(1);
-                            width: svw(30);
+                            width: 3rem;
                         }
                     }
                 }
             }
         }
         & .content {
-            width: vw(874);
+            width: 87.4rem;
             display: flex;
             flex-direction: column;
             @include tablet() {
-                width: calc(100% - svw(24));
-                margin-left: svw(24);
+                width: calc(100% - 2.4rem);
+                margin-left: 2.4rem;
             }
             & .mail {
                 height: 50%;
                 width: 100%;
                 background-color: $color-main;
-                padding-left: vw(24);
+                padding-left: 2.4rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                font-size: vw(24);
+                font-size: 2.4rem;
                 h3 {
                     @include tablet() {
-                        padding-bottom: svw(12);
+                        padding-bottom: 1.2rem;
                     }
                 }
                 @include tablet() {
                     height: auto;
-                    padding-left: svw(22);
-                    padding-right: svw(44);
-                    padding-top: svw(50);
-                    padding-bottom: svw(50);
+                    padding-left: 2.2rem;
+                    padding-right: 4.4rem;
+                    padding-top: 5rem;
+                    padding-bottom: 5rem;
                 }
                 & .mail-button {
                     display: inline-block;
-                    padding: vw(12) vw(60) vw(12) vw(62);
+                    padding: 1.2rem 6rem 1.2rem 6.2rem;
                     background-color: $color-white;
                     color: $color-main;
-                    font-size: vw(16);
+                    font-size: 1.6rem;
                     font-weight: 600;
                     line-height: 1.5;
-                    border-radius: vw(2);
+                    border-radius: 0.2rem;
                     position: relative;
-                    margin-top: vw(18);
+                    margin-top: 1.8rem;
                     @include tablet {
-                        font-size: svw(16);
-                        padding: svw(12) svw(60) svw(12) svw(62);
-                        border-radius: svw(2);
-                        margin-top: svw(18);
+                        font-size: 1.6rem;
+                        padding: 1.2rem 6rem 1.2rem 6.2rem;
+                        border-radius: 0.2rem;
+                        margin-top: 1.8rem;
                     }
                     &::before {
                         content: "";
                         position: absolute;
                         top: 50%;
-                        right: vw(18);
-                        height: vw(10);
-                        width: vw(10);
-                        border-right: vw(3) solid $color-main;
-                        border-bottom: vw(3) solid $color-main;
+                        right: 1.8rem;
+                        height: 1rem;
+                        width: 1rem;
+                        border-right: 0.3rem solid $color-main;
+                        border-bottom: 0.3rem solid $color-main;
                         transform: translateY(-50%) rotate(-45deg);
                         @include tablet() {
-                            right: svw(18);
-                            height: svw(10);
-                            width: svw(10);
-                            border-right: svw(3) solid $color-main;
-                            border-bottom: svw(3) solid $color-main;
+                            right: 1.8rem;
+                            height: 1rem;
+                            width: 1rem;
+                            border-right: 0.3rem solid $color-main;
+                            border-bottom: 0.3rem solid $color-main;
                         }
                     }
                 }
@@ -1311,36 +1320,81 @@ html{
                 height: 50%;
                 width: 100%;
                 background-color: $color-sub;
-                padding-left: vw(24);
+                padding-left: 2.4rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                font-size: vw(24);
+                font-size: 2.4rem;
                 @include tablet {
                     height: auto;
-                    padding-left: svw(22);
-                    padding-right: svw(44);
-                    padding-top: svw(50);
-                    padding-bottom: svw(50);
+                    padding-left: 2.2rem;
+                    padding-right: 4.4rem;
+                    padding-top: 5rem;
+                    padding-bottom: 5rem;
                 }
                 h3 {
                     @include tablet() {
-                        padding-bottom: svw(12);
+                        padding-bottom: 1.2rem;
                     }
                 }
                 p {
-                    font-size: vw(20);
+                    font-size: 2rem;
                     line-height: 1.5;
                     @include tablet() {
-                        font-size: svw(20);
+                        font-size: 2rem;
                     }
                 }
                 &-number {
-                    font-size: vw(42);
+                    font-size: 4.2rem;
                     font-weight: 700;
                     @include tablet() {
-                        font-size: svw(32);
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+    }
+    &.only-telephone {
+        padding: 5.4rem 0;
+        background-color: $color-sub;
+        @include tablet {
+            padding: 5rem 2.4rem;
+        }
+        .content {
+            .telephone {
+                margin: 0 auto;
+                text-align: left;
+                width: fit-content;
+                color: $color-white;
+                @include tablet {
+                    margin: 0;
+                }
+                h2 {
+                    @include font-topContactH3;
+                    @include tablet {
+                        padding-bottom: 1.2rem;
+                    }
+                }
+                p {
+                    font-size: 2rem;
+                    line-height: 1.5;
+                    @include tablet() {
+                        font-size: 2rem;
+                    }
+                }
+                &-number {
+                    font-size: 4.2rem;
+                    font-weight: 700;
+                    @include tablet() {
+                        font-size: 3.2rem;
+                    }
+                }
+                &-time {
+                    display: inline-block;
+                    @include tablet {
+                        display: block;
+                        font-size: 2rem;
                     }
                 }
             }
@@ -1466,14 +1520,25 @@ html{
 .mv-page {
     width: 100%;
     height: 46.2rem;
-    background-image: url(../images/top/mv.jpeg);
+    background-image: url(../images/top/mv.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include tablet() {
         height: 37rem;
     }
     &.mv-about {
-        background-image: url(../images/about/AdobeStock_309093696.jpeg);
+        background-image: url(../images/about/mv-about.jpeg);
+    }
+    &.mv-recruitment {
+        background-image: url(../images/recruit/mv-recruitment.jpeg);
+    }
+    &.mv-contactForm {
+        background-image: url(../images/contact/mv-contact.jpeg);
+        background-position-x: -27rem;
+        @include tablet {
+            background-position-x: center;
+        }
     }
     &__wrapper {
         background-color: rgba(70, 80, 87, 0.3);
@@ -1491,20 +1556,22 @@ html{
             height: 100%;
             &-main {
                 @include font-pageTitle;
-                padding-top: 21rem;
-                padding-left: 5rem;
+                line-height: 1.4;
+                padding-top: 22rem;
+                letter-spacing: 0.2rem;
                 @include tablet() {
                     font-size: 2.4rem;
                     white-space:nowrap;
                     padding-top: 0;
-                    padding-left: svw(0);
                     position: relative;
-                    top: calc(6rem + 50%);
+                    top: calc(2.8rem + 50%);
                     transform: translateY(-50%);
                 }
                 span {
                     display: block;
                     @include font-pageTitleSpan;
+                    line-height: 1.0;
+                    letter-spacing: 0.2rem;
                 }
             }
         }
@@ -1525,14 +1592,26 @@ html{
 
 
 //about
-.section-about {
+.section-about, .section-recruitment {
     &__inner {
         h2 {
             @include font-pageh2;
             padding-bottom: 4rem;
+            @include tablet() {
+                padding-bottom: 2.4rem
+            }
         }
         h3 {
             @include font-pageh3;
+        }
+        h4 {
+            padding-top: 1.8rem;
+            padding-bottom: 3rem;
+            @include font-pageh4;
+            @include tablet {
+                padding-top: 0.2rem;
+                padding-bottom: 1rem;
+            }
         }
         p {
             width: 44.2rem;
@@ -1540,7 +1619,7 @@ html{
             padding-bottom: 11rem;
             @include tablet {
                 width: auto;
-                padding-bottom: 7.3rem;
+                padding-bottom: 6rem;
             }
         }
         &-company {
@@ -1592,76 +1671,284 @@ html{
 //privacy
 .section-privacy {
     background-color: #fff;
-    padding-top: 220px;
-    padding-bottom: 80px;
+    padding-top: 22rem;
+    padding-bottom: 8rem;
     @include tablet() {
-        padding-top: 160px;
+        padding-top: 16rem;
+        padding-bottom: 2rem;
     }
     &__heading {
-        h2 {
+        h1 {
             color: $color-font-normal;
-            font-size: 40px;
+            font-size: 4rem;
             font-weight: 600;
-            letter-spacing: 1px;
-            padding-bottom: 40px;
+            letter-spacing: 0.1rem;
+            padding-bottom: 4rem;
             @include tablet() {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
         }
         p {
-            font-size: 16px;
-            line-height: 32px;
-            max-width: 880px;
-            padding-bottom: 160px;
+            font-size: 1.6rem;
+            line-height: 2;
+            max-width: 88rem;
+            padding-bottom: 16rem;
             @include tablet() {
-                font-size: 14px;
-                line-height: 30px;
+                font-size: 1.4rem;
+                line-height: 2;
                 letter-spacing: 0;
-                padding-bottom: 100px;
+                padding-bottom: 10rem;
             }
         }
     }
     &__contents {
-        max-width: 880px;
+        max-width: 88rem;
         margin: 0 auto;
         &-border {
-            height: 3px;
+            height: 0.3rem;
             width: 100%;
-            background-color: #E6E6E6;
+            background-color: $color-privacy-border;
             position: relative;
             &::before {
                 content: "";
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 3px;
-                width: 20px;
+                height: 0.3rem;
+                width: 2rem;
                 background-color: $color-main;
             }
         }
         &-item {
-            padding-top: 70px;
-            padding-bottom: 90px;
+            padding-top: 7rem;
+            padding-bottom: 9rem;
             @include tablet() {
-                padding-top: 50px;
+                padding-top: 6rem;
+                padding-bottom: 10rem;
             }
-            h3 {
-                font-size: 30px;
-                line-height: 42px;
-                padding-bottom: 40px;
+            h2 {
+                font-size: 3rem;
+                line-height: 1.3;
+                padding-bottom: 3.8rem;
                 font-weight: 500;
-                letter-spacing: 1px;
+                letter-spacing: 0.2rem;
                 @include tablet() {
-                    font-size: 20px;
-                    line-height: 36px;
-                    padding-bottom: 40px;
+                    font-size: 2.4rem;
+                    padding-bottom: 4rem;
                 }
             }
             p {
-                color: #676767;
+                @include font-normal;
+                line-height: 2.2!important;
+                font-weight: 500;
+                color: $color-font-privacy;
+            }
+        }
+    }
+}
+
+
+//mail-form & mail-flow
+.mail-flow {
+    padding-bottom: 6rem;
+    p {
+        @include font-normal;
+        font-weight: 500;
+        padding-bottom: 3rem;
+        text-align: center;
+        @include tablet {
+            text-align: left;
+        }
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5.6rem;
+        flex-direction: row;
+        width: fit-content;
+        margin: 0 auto;
+        @include tablet {
+            gap: 3.3rem;
+        }
+        &-step {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &.pageActive {
+                color: $color-main;
+            }
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+        &-arrow {
+            border-top: 0.5rem solid $color-main;
+            border-right: 0.5rem solid $color-main;
+            width: 1.8rem;
+            height: 1.8rem;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            @include tablet{
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+    }
+}
+.mail-form {
+    &__container {
+        max-width: 90rem;
+        margin: 0 auto;
+        padding-top: 3rem;
+        @include tablet() {
+            padding-top: 1rem;
+        }
+        form {
+            display: block;
+            table {
+                display: block;
+                padding-bottom: 5rem;
+            }
+            tbody {
+                display: block;
+            }
+            tr {
+                display: block;
+                border-top: solid 0.2rem #F0F0F0;
+                padding: 4rem 0;
                 @include tablet() {
-                    font-size: 14px;
-                    line-height: 30px;
+                    padding: 3.4rem 0 4rem;
+                }
+                &.last-tr {
+                    padding-bottom: 3rem;
+                    border-bottom: solid 0.2rem #F0F0F0;
+                    @include tablet() {
+                        padding-bottom: 4rem;
+                    }
+                }
+            }
+            th {
+                display: inline-block;
+                max-width: 28rem;
+                width: 100%;
+                vertical-align: top;
+                position: relative;
+                font-size: 1.6rem;
+                line-height: 1.6;
+                &::after {
+                    content: "必須";
+                    position: absolute;
+                    bottom: -2.6rem;
+                    left: 0px;
+                    padding: 0px 1.4rem 0.2rem;
+                    background-color: #EF0C0C;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    border-radius: 0.2rem;
+                    @include tablet() {
+                        position: relative;
+                        bottom: 0;
+                        left: 0.8rem;
+                    }
+                }
+                &.none-required::after {
+                    display: none;
+                }
+                @include tablet() {
+                    padding-bottom: 1.0rem;
+                }
+            }
+            td {
+                display: inline-block;
+                input, textarea {
+                    display: block;
+                    height: 5.0rem;
+                    width: 48rem;
+                    border: solid #C3CDD6 0.1rem;
+                    border-radius: 0.4rem;
+                    background-color: #FAFAFA;
+                    font-size: 1.6rem;
+                    padding-left: 2rem;
+                    letter-spacing: 0.2rem;
+                    @include tablet {
+                        max-width: 48rem;
+                        width: 100%;
+                        height: 4rem;
+                    }
+                    &::placeholder {
+                        color: #C3CDD6;
+                    }
+                }
+                textarea {
+                    height: 16rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+            p {
+                text-align: center;
+                @include font-normal;
+                font-weight: 600;
+                @include tablet() {
+                    text-align: left;
+                }
+                a {
+                    color: #5D88DE;
+                    text-decoration: underline;
+                }
+            }
+            .mail-form__button {
+                position: relative;
+                max-width: 36rem;
+                width: 100%;
+                margin: 4.2rem auto 0;
+                input {
+                    cursor: pointer;
+                    background-color: $color-font-normal;
+                    padding: 2rem 0;
+                    width: 100%;
+                    display: block;
+                    @include font-normal;
+                    font-weight: 600;
+                    letter-spacing: 0.1rem;
+                    color: #fff;
+                    border: none;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    border-top: 0.3rem solid #fff;
+                    border-right: 0.3rem solid #fff;
+                    width: 1rem;
+                    height: 1rem;
+                    -webkit-transform: rotate(45deg) translateY(-50%);
+                    transform: rotate(45deg) translateY(-50%);
+                    right: 3rem;
+                    top: 49%;
+                    @include tablet{
+                        height: 1rem;
+                        width: 1rem;
+                        top: 2.2rem;
+                        right: 1.9rem;
+                    }
+                }
+            }
+            @include tablet {
+                th {
+                    display: block;
+                }
+                td {
+                    display: block;
+                }
+                textarea {
+                    display: block;
+                    width: 100%;
                 }
             }
         }

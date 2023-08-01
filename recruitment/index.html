@@ -71,7 +71,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="main-items__item pageActive">
+                            <li class="main-items__item">
                                 <a href="../about/index.html">
                                     <div>
                                         <span></span>
@@ -79,7 +79,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="main-items__item">
+                            <li class="main-items__item pageActive">
                                 <a href="../recruitment/index.html">
                                     <div>
                                         <span></span>
@@ -181,63 +181,90 @@
             </div>
         </header>
         <main class="main">
-            <div class="mv-page mv-about fixed-bg">
+            <div class="mv-page mv-recruitment fixed-bg">
                 <div class="mv-page__wrapper">
                     <div class="wrapper1220">
                         <div class="mv-page__inner">
                             <div class="mv-page__inner-title">
                                 <h1 class="mv-page__inner-title-main">
-                                    会社案内
-                                    <span>About Us</span>
+                                    採用情報
+                                    <span>Recruitment Information</span>
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="section-page section-about">
+            <section class="section-page section-recruitment">
                 <div class="wrapper1220">
-                    <div class="section-about__inner">
-                        <h2>経営と施工の二人三脚で<br class="pc">
-                            スピーディーに対応します。
+                    <div class="section-recruitment__inner">
+                        <h2>平均年齢26歳の<br class="pc">
+                            フレッシュな会社です。
                         </h2>
                         <p>
-                            役割分担することでスピード・クオリティを担保し、経営、施工共に若く、将来にわたって持続可能であることがお客様の安心にも繋がると考えます。
+                            事業基盤強化中に伴い、従業員募集中。<br>
+                            地域の活性化に貢献するために、雇用の拡大を目指しています。性別・年齢・国籍は問いません。
                         </p>
-                        <div class="section-about__inner-company">
-                            <h3>会社概要</h3>
+                        <div class="section-recruitment__inner-company">
+                            <h3>募集職種</h3>
+                            <h4>水道工事スタッフ</h4>
                             <table>
                                 <tr>
-                                    <th>会社名</th>
-                                    <td>清水設備</td>
+                                    <th>仕事内容</th>
+                                    <td>一般のご家庭の水道設備リフォーム工事や新規配管を中心とした水道工事作業に携わっていただきます。</td>
                                 </tr>
                                 <tr>
-                                    <th>代表取締役</th>
-                                    <td>清水　眞妃<br class="tablet">（シミズ　マキ）</td>
+                                    <th>求める人材</th>
+                                    <td>やる気のある方。性別・年齢・国籍不問。資格取得希望者は応援します。</td>
                                 </tr>
                                 <tr>
-                                    <th>設立</th>
-                                    <td>2021年8月1日</td>
+                                    <th>必須事項</th>
+                                    <td>普通自動車運転免許（未成年者は要相談）</td>
                                 </tr>
                                 <tr>
-                                    <th>業務内容</th>
-                                    <td>水道設備業</td>
+                                    <th>勤務地</th>
+                                    <td>山梨県内</td>
                                 </tr>
                                 <tr>
-                                    <th>所在地</th>
-                                    <td>〒400-0118<br class="tablet">
-                                        山梨県甲斐市竜王2262</td>
+                                    <th>応募方法</th>
+                                    <td>下記フォームにてお申し込みください</td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="section-about__inner-license">
-                            <h3>保有資格</h3>
-                            <div>
-                                <ul>
-                                    <li>給水装置主任技術者</li>
-                                    <li>１級配置工</li>
-                                    <li>宅内配水責任技術者</li>
-                                </ul>
+                    </div>
+                    <div class="mail-form">
+                        <div class="mail-form__container">
+                            <div id="formWrap" class="mail-form__wrapper">
+                                <form method="post" action="recruitment.php">
+                                    <table class="formTable">
+                                        <tr>
+                                            <th>お名前</th>
+                                            <td><input size="20" type="text" name="お名前" placeholder="例：清水 太郎" /></td>
+                                        </tr>
+                                        <tr>
+                                            <th>日中に繋がる電話番号</th>
+                                            <td><input size="30" type="tel" name="telNumber" pattern="\d{1,5}-\d{1,4}-\d{4,5}" placeholder="例：00-0000-0000"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>メールアドレス</th>
+                                            <td><input size="30" type="text" name="Email" placeholder="例：example@shimizusetsubi.com"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="none-required">年齢</th>
+                                            <td><input size="30" type="text" name="age" placeholder="例：26歳"/></td>
+                                        </tr>
+                                        <tr class="last-tr">
+                                            <th>備考</th>
+                                            <td><textarea name="備考" cols="50" rows="5"></textarea></td>
+                                        </tr>
+                                    </table>
+                                    <p><a href="../pivacy/index.html" target="_blank">プライバシーポリシー</a>をお読みいただき、<br>
+                                    同意いただける方は「送信」ボタンを押してください。
+                                    </p>
+                                    <div class="mail-form__button">
+                                        <input type="submit" value="　 送信する 　" />
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

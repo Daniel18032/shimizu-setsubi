@@ -71,7 +71,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="main-items__item pageActive">
+                            <li class="main-items__item">
                                 <a href="../about/index.html">
                                     <div>
                                         <span></span>
@@ -181,96 +181,89 @@
             </div>
         </header>
         <main class="main">
-            <div class="mv-page mv-about fixed-bg">
+            <div class="mv-page mv-contactForm fixed-bg">
                 <div class="mv-page__wrapper">
                     <div class="wrapper1220">
                         <div class="mv-page__inner">
                             <div class="mv-page__inner-title">
                                 <h1 class="mv-page__inner-title-main">
-                                    会社案内
-                                    <span>About Us</span>
+                                    お問い合わせ
+                                    <span>Contact Us</span>
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="section-page section-about">
+            <div class="section-page section-contactForm">
                 <div class="wrapper1220">
-                    <div class="section-about__inner">
-                        <h2>経営と施工の二人三脚で<br class="pc">
-                            スピーディーに対応します。
-                        </h2>
-                        <p>
-                            役割分担することでスピード・クオリティを担保し、経営、施工共に若く、将来にわたって持続可能であることがお客様の安心にも繋がると考えます。
-                        </p>
-                        <div class="section-about__inner-company">
-                            <h3>会社概要</h3>
-                            <table>
-                                <tr>
-                                    <th>会社名</th>
-                                    <td>清水設備</td>
-                                </tr>
-                                <tr>
-                                    <th>代表取締役</th>
-                                    <td>清水　眞妃<br class="tablet">（シミズ　マキ）</td>
-                                </tr>
-                                <tr>
-                                    <th>設立</th>
-                                    <td>2021年8月1日</td>
-                                </tr>
-                                <tr>
-                                    <th>業務内容</th>
-                                    <td>水道設備業</td>
-                                </tr>
-                                <tr>
-                                    <th>所在地</th>
-                                    <td>〒400-0118<br class="tablet">
-                                        山梨県甲斐市竜王2262</td>
-                                </tr>
-                            </table>
+                    <div class="section-contactForm__inner">
+                        <div class="mail-flow">
+                            <p>お問い合わせ、お見積もり依頼はこちらからお願いいたします。</p>
+                            <div class="mail-flow__flex">
+                                <div class="mail-flow__flex-step pageActive">
+                                    <span>01</span>
+                                    <span>入力</span>
+                                </div>
+                                <div class="mail-flow__flex-arrow"></div>
+                                <div class="mail-flow__flex-step">
+                                    <span>02</span>
+                                    <span>確認</span>
+                                </div>
+                                <div class="mail-flow__flex-arrow"></div>
+                                <div class="mail-flow__flex-step">
+                                    <span>03</span>
+                                    <span>完了</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="section-about__inner-license">
-                            <h3>保有資格</h3>
-                            <div>
-                                <ul>
-                                    <li>給水装置主任技術者</li>
-                                    <li>１級配置工</li>
-                                    <li>宅内配水責任技術者</li>
-                                </ul>
+                    </div>
+                    <div class="mail-form">
+                        <div class="mail-form__container">
+                            <div id="formWrap" class="mail-form__wrapper">
+                                <form method="post" action="contactForm.php">
+                                    <table class="formTable">
+                                        <tr>
+                                            <th>お問い合わせ内容</th>
+                                            <td><input size="20" type="text" name="お問い合わせ内容"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th>お名前</th>
+                                            <td><input size="20" type="text" name="お名前" placeholder="例：清水 太郎" /></td>
+                                        </tr>
+                                        <tr>
+                                            <th>メールアドレス</th>
+                                            <td><input size="30" type="text" name="Email" placeholder="例：example@shimizusetsubi.com"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="none-required">電話番号</th>
+                                            <td><input size="30" type="tel" name="telNumber" pattern="\d{1,5}-\d{1,4}-\d{4,5}" placeholder="例：00-0000-0000"></td>
+                                        </tr>
+                                        <tr class="last-tr">
+                                            <th>お問い合わせ詳細</th>
+                                            <td><textarea name="備考" cols="50" rows="5"></textarea></td>
+                                        </tr>
+                                    </table>
+                                    <p><a href="../pivacy/index.html" target="_blank">プライバシーポリシー</a>をお読みいただき、<br>
+                                    同意いただける方は「送信」ボタンを押してください。
+                                    </p>
+                                    <div class="mail-form__button">
+                                        <input type="submit" value="　 送信する 　" />
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section-contact">
-                <div class="section-contact__contents">
-                    <div class="title">
-                        <div class="title__inner">
-                            <div class="head">
-                                <div class="head__border"></div>
-                                <div class="head__title">CONTACT US</div>
-                            </div>
-                            <h2>
-                                お問い合わせは<br>
-                                こちらから
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="mail">
-                            <h3>メールフォームでのお問い合わせ</h3>
-                            <p>各種お問い合わせ・ご相談・お見積もりをメールフォームにて承っております。</p>
-                            <a class="mail-button" href="./contact/index.html">
-                                メールフォームを開く
-                            </a>
-                        </div>
-                        <div class="telephone">
-                            <h3>お電話でのお問い合わせ</h3>
-                            <p>
-                                Tel: <span class="telephone-number">055(215)0236&nbsp;</span>(営業時間 8:00〜17:00)
-                            </p>
-                        </div>
+            </div>
+            <section class="section-contact only-telephone">
+                <div class="content">
+                    <div class="telephone">
+                        <h2>お電話でのお問い合わせ</h2>
+                        <p>
+                            Tel: <span class="telephone-number">055(215)0236&nbsp;</span>
+                            <span class="telephone-time">(営業時間 8:00〜17:00)</span>
+                        </p>
                     </div>
                 </div>
             </section>

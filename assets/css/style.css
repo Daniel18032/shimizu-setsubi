@@ -105,7 +105,7 @@ html body {
 @media only screen and (max-width: 768px) {
   html body {
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 
@@ -502,7 +502,7 @@ html body {
 @media only screen and (max-width: 768px) {
   .header__gnav-inner nav.gnav .gnav__nav-title a {
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 .header__gnav-inner nav.gnav .gnav__nav-title a::before {
@@ -515,6 +515,10 @@ html body {
   width: 1rem;
   background-color: #ffffff;
   border-radius: 50%;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact {
+  color: #ffffff;
+  background-color: #414C65;
 }
 .header__gnav-bg {
   background: rgba(0, 0, 0, 0.5);
@@ -1059,8 +1063,8 @@ html body {
 @media only screen and (max-width: 768px) {
   .section-contact__contents {
     display: block;
-    padding-top: 10.6666666667vw;
-    padding-bottom: 7.2vw;
+    padding-top: 4rem;
+    padding-bottom: 2.7rem;
     background-color: #0086D9;
   }
 }
@@ -1078,7 +1082,7 @@ html body {
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents h2 {
-    padding-bottom: 11.2vw;
+    padding-bottom: 4.2rem;
   }
 }
 .section-contact__contents h3 {
@@ -1104,13 +1108,13 @@ html body {
 @media only screen and (max-width: 768px) {
   .section-contact__contents p {
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 .section-contact__contents .title {
   background-color: #0086D9;
-  width: 39.3055555556vw;
-  height: 28.3333333333vw;
+  width: 56.6rem;
+  height: 40.8rem;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .title {
@@ -1131,154 +1135,217 @@ html body {
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .title__inner {
-    margin-left: 6.4vw;
+    margin-left: 2.4rem;
     width: auto;
   }
 }
 .section-contact__contents .title__inner .head {
   display: flex;
   align-items: center;
-  gap: 0.5555555556vw;
-  padding-bottom: 0.6944444444vw;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
   color: #ffffff;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .title__inner .head {
-    padding-bottom: 4.2666666667vw;
-    gap: 2.1333333333vw;
-    font-size: 3.2vw;
-    letter-spacing: 0.2666666667vw;
+    padding-bottom: 1.6rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
   }
 }
 .section-contact__contents .title__inner .head__border {
   display: inline-block;
-  height: 0.0694444444vw;
-  width: 3.4722222222vw;
+  height: 0.1rem;
+  width: 5rem;
   background-color: #ffffff;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .title__inner .head__border {
-    height: 0.2666666667vw;
-    width: 8vw;
+    width: 3rem;
   }
 }
 .section-contact__contents .content {
-  width: 60.6944444444vw;
+  width: 87.4rem;
   display: flex;
   flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content {
-    width: calc(100% - 6.4vw);
-    margin-left: 6.4vw;
+    width: calc(100% - 2.4rem);
+    margin-left: 2.4rem;
   }
 }
 .section-contact__contents .content .mail {
   height: 50%;
   width: 100%;
   background-color: #039CFC;
-  padding-left: 1.6666666667vw;
+  padding-left: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 1.6666666667vw;
+  font-size: 2.4rem;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .mail h3 {
-    padding-bottom: 3.2vw;
+    padding-bottom: 1.2rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .mail {
     height: auto;
-    padding-left: 5.8666666667vw;
-    padding-right: 11.7333333333vw;
-    padding-top: 13.3333333333vw;
-    padding-bottom: 13.3333333333vw;
+    padding-left: 2.2rem;
+    padding-right: 4.4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 .section-contact__contents .content .mail .mail-button {
   display: inline-block;
-  padding: 0.8333333333vw 4.1666666667vw 0.8333333333vw 4.3055555556vw;
+  padding: 1.2rem 6rem 1.2rem 6.2rem;
   background-color: #ffffff;
   color: #039CFC;
-  font-size: 1.1111111111vw;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.5;
-  border-radius: 0.1388888889vw;
+  border-radius: 0.2rem;
   position: relative;
-  margin-top: 1.25vw;
+  margin-top: 1.8rem;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .mail .mail-button {
-    font-size: 4.2666666667vw;
-    padding: 3.2vw 16vw 3.2vw 16.5333333333vw;
-    border-radius: 0.5333333333vw;
-    margin-top: 4.8vw;
+    font-size: 1.6rem;
+    padding: 1.2rem 6rem 1.2rem 6.2rem;
+    border-radius: 0.2rem;
+    margin-top: 1.8rem;
   }
 }
 .section-contact__contents .content .mail .mail-button::before {
   content: "";
   position: absolute;
   top: 50%;
-  right: 1.25vw;
-  height: 0.6944444444vw;
-  width: 0.6944444444vw;
-  border-right: 0.2083333333vw solid #039CFC;
-  border-bottom: 0.2083333333vw solid #039CFC;
+  right: 1.8rem;
+  height: 1rem;
+  width: 1rem;
+  border-right: 0.3rem solid #039CFC;
+  border-bottom: 0.3rem solid #039CFC;
   transform: translateY(-50%) rotate(-45deg);
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .mail .mail-button::before {
-    right: 4.8vw;
-    height: 2.6666666667vw;
-    width: 2.6666666667vw;
-    border-right: 0.8vw solid #039CFC;
-    border-bottom: 0.8vw solid #039CFC;
+    right: 1.8rem;
+    height: 1rem;
+    width: 1rem;
+    border-right: 0.3rem solid #039CFC;
+    border-bottom: 0.3rem solid #039CFC;
   }
 }
 .section-contact__contents .content .telephone {
   height: 50%;
   width: 100%;
   background-color: #45B8FF;
-  padding-left: 1.6666666667vw;
+  padding-left: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 1.6666666667vw;
+  font-size: 2.4rem;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .telephone {
     height: auto;
-    padding-left: 5.8666666667vw;
-    padding-right: 11.7333333333vw;
-    padding-top: 13.3333333333vw;
-    padding-bottom: 13.3333333333vw;
+    padding-left: 2.2rem;
+    padding-right: 4.4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .telephone h3 {
-    padding-bottom: 3.2vw;
+    padding-bottom: 1.2rem;
   }
 }
 .section-contact__contents .content .telephone p {
-  font-size: 1.3888888889vw;
+  font-size: 2rem;
   line-height: 1.5;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .telephone p {
-    font-size: 5.3333333333vw;
+    font-size: 2rem;
   }
 }
 .section-contact__contents .content .telephone-number {
-  font-size: 2.9166666667vw;
+  font-size: 4.2rem;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
   .section-contact__contents .content .telephone-number {
-    font-size: 8.5333333333vw;
+    font-size: 3.2rem;
+  }
+}
+.section-contact.only-telephone {
+  padding: 5.4rem 0;
+  background-color: #45B8FF;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone {
+    padding: 5rem 2.4rem;
+  }
+}
+.section-contact.only-telephone .content .telephone {
+  margin: 0 auto;
+  text-align: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone {
+    margin: 0;
+  }
+}
+.section-contact.only-telephone .content .telephone h2 {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone h2 {
+    padding-bottom: 1.2rem;
+  }
+}
+.section-contact.only-telephone .content .telephone p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone p {
+    font-size: 2rem;
+  }
+}
+.section-contact.only-telephone .content .telephone-number {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone-number {
+    font-size: 3.2rem;
+  }
+}
+.section-contact.only-telephone .content .telephone-time {
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .section-contact.only-telephone .content .telephone-time {
+    display: block;
+    font-size: 2rem;
   }
 }
 
@@ -1422,7 +1489,8 @@ html body {
 .mv-page {
   width: 100%;
   height: 46.2rem;
-  background-image: url(../images/top/mv.jpeg);
+  background-image: url(../images/top/mv.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -1432,7 +1500,19 @@ html body {
   }
 }
 .mv-page.mv-about {
-  background-image: url(../images/about/AdobeStock_309093696.jpeg);
+  background-image: url(../images/about/mv-about.jpeg);
+}
+.mv-page.mv-recruitment {
+  background-image: url(../images/recruit/mv-recruitment.jpeg);
+}
+.mv-page.mv-contactForm {
+  background-image: url(../images/contact/mv-contact.jpeg);
+  background-position-x: -27rem;
+}
+@media only screen and (max-width: 768px) {
+  .mv-page.mv-contactForm {
+    background-position-x: center;
+  }
 }
 .mv-page__wrapper {
   background-color: rgba(70, 80, 87, 0.3);
@@ -1457,8 +1537,9 @@ html body {
   font-weight: 700;
   color: #ffffff;
   text-align: left;
-  padding-top: 21rem;
-  padding-left: 5rem;
+  line-height: 1.4;
+  padding-top: 22rem;
+  letter-spacing: 0.2rem;
 }
 @media only screen and (max-width: 768px) {
   .mv-page__inner-title-main {
@@ -1471,9 +1552,8 @@ html body {
     font-size: 2.4rem;
     white-space: nowrap;
     padding-top: 0;
-    padding-left: 0vw;
     position: relative;
-    top: calc(6rem + 50%);
+    top: calc(2.8rem + 50%);
     transform: translateY(-50%);
   }
 }
@@ -1487,6 +1567,8 @@ html body {
   letter-spacing: 0.2rem;
   text-align: left;
   padding-top: 0.2rem;
+  line-height: 1;
+  letter-spacing: 0.2rem;
 }
 @media only screen and (max-width: 768px) {
   .mv-page__inner-title-main span {
@@ -1508,7 +1590,7 @@ html body {
   }
 }
 
-.section-about__inner h2 {
+.section-about__inner h2, .section-recruitment__inner h2 {
   font-size: 5rem;
   line-height: 1.4;
   font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -1519,12 +1601,17 @@ html body {
   padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner h2 {
+  .section-about__inner h2, .section-recruitment__inner h2 {
     font-size: 3rem;
     letter-spacing: 0.1rem;
   }
 }
-.section-about__inner h3 {
+@media only screen and (max-width: 768px) {
+  .section-about__inner h2, .section-recruitment__inner h2 {
+    padding-bottom: 2.4rem;
+  }
+}
+.section-about__inner h3, .section-recruitment__inner h3 {
   font-size: 3rem;
   line-height: 1.6;
   font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -1536,14 +1623,14 @@ html body {
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner h3 {
-    font-size: 3rem;
+  .section-about__inner h3, .section-recruitment__inner h3 {
+    font-size: 2.2rem;
     letter-spacing: 0.1rem;
     padding-left: 2.2rem;
     margin-bottom: 2rem;
   }
 }
-.section-about__inner h3::before {
+.section-about__inner h3::before, .section-recruitment__inner h3::before {
   content: "";
   position: absolute;
   width: 1.8rem;
@@ -1555,12 +1642,33 @@ html body {
   transform: translateY(-50%);
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner h3::before {
+  .section-about__inner h3::before, .section-recruitment__inner h3::before {
     width: 1.4rem;
     height: 1.4rem;
   }
 }
-.section-about__inner p {
+.section-about__inner h4, .section-recruitment__inner h4 {
+  padding-top: 1.8rem;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 600;
+  color: #1e1e1e;
+  letter-spacing: 0.1rem;
+}
+@media only screen and (max-width: 768px) {
+  .section-about__inner h4, .section-recruitment__inner h4 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-about__inner h4, .section-recruitment__inner h4 {
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+  }
+}
+.section-about__inner p, .section-recruitment__inner p {
   width: 44.2rem;
   font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: 1.6rem;
@@ -1570,35 +1678,35 @@ html body {
   padding-bottom: 11rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner p {
+  .section-about__inner p, .section-recruitment__inner p {
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner p {
+  .section-about__inner p, .section-recruitment__inner p {
     width: auto;
-    padding-bottom: 7.3rem;
-  }
-}
-.section-about__inner-company {
-  padding-bottom: 7rem;
-}
-@media only screen and (max-width: 768px) {
-  .section-about__inner-company {
     padding-bottom: 6rem;
   }
 }
-.section-about__inner-company table {
+.section-about__inner-company, .section-recruitment__inner-company {
+  padding-bottom: 7rem;
+}
+@media only screen and (max-width: 768px) {
+  .section-about__inner-company, .section-recruitment__inner-company {
+    padding-bottom: 6rem;
+  }
+}
+.section-about__inner-company table, .section-recruitment__inner-company table {
   width: 100%;
 }
-.section-about__inner-company table:last-child {
+.section-about__inner-company table:last-child, .section-recruitment__inner-company table:last-child {
   border-bottom: 0.1rem solid #DEE9EF;
 }
-.section-about__inner-company table tr {
+.section-about__inner-company table tr, .section-recruitment__inner-company table tr {
   border-top: 0.1rem solid #DEE9EF;
 }
-.section-about__inner-company table tr th {
+.section-about__inner-company table tr th, .section-recruitment__inner-company table tr th {
   width: 12rem;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -1611,14 +1719,14 @@ html body {
   width: 14.3rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner-company table tr th {
+  .section-about__inner-company table tr th, .section-recruitment__inner-company table tr th {
     font-size: 1.4rem;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     padding-left: 1.4rem;
   }
 }
-.section-about__inner-company table tr td {
+.section-about__inner-company table tr td, .section-recruitment__inner-company table tr td {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 500;
@@ -1626,14 +1734,14 @@ html body {
   padding-left: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner-company table tr td {
+  .section-about__inner-company table tr td, .section-recruitment__inner-company table tr td {
     font-size: 1.4rem;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     padding-left: 1.4rem;
   }
 }
-.section-about__inner-license div ul li {
+.section-about__inner-license div ul li, .section-recruitment__inner-license div ul li {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 700;
@@ -1650,61 +1758,62 @@ html body {
   padding-left: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-about__inner-license div ul li {
+  .section-about__inner-license div ul li, .section-recruitment__inner-license div ul li {
     font-size: 1.4rem;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     padding-left: 1.4rem;
   }
 }
-.section-about__inner-license div ul:last-child {
+.section-about__inner-license div ul:last-child, .section-recruitment__inner-license div ul:last-child {
   border-bottom: 0.1rem solid #DEE9EF;
 }
 
 .section-privacy {
   background-color: #fff;
-  padding-top: 220px;
-  padding-bottom: 80px;
+  padding-top: 22rem;
+  padding-bottom: 8rem;
 }
 @media only screen and (max-width: 768px) {
   .section-privacy {
-    padding-top: 160px;
+    padding-top: 16rem;
+    padding-bottom: 2rem;
   }
 }
-.section-privacy__heading h2 {
+.section-privacy__heading h1 {
   color: #1e1e1e;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
-  letter-spacing: 1px;
-  padding-bottom: 40px;
+  letter-spacing: 0.1rem;
+  padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-privacy__heading h2 {
-    font-size: 24px;
+  .section-privacy__heading h1 {
+    font-size: 2.4rem;
   }
 }
 .section-privacy__heading p {
-  font-size: 16px;
-  line-height: 32px;
-  max-width: 880px;
-  padding-bottom: 160px;
+  font-size: 1.6rem;
+  line-height: 2;
+  max-width: 88rem;
+  padding-bottom: 16rem;
 }
 @media only screen and (max-width: 768px) {
   .section-privacy__heading p {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 1.4rem;
+    line-height: 2;
     letter-spacing: 0;
-    padding-bottom: 100px;
+    padding-bottom: 10rem;
   }
 }
 .section-privacy__contents {
-  max-width: 880px;
+  max-width: 88rem;
   margin: 0 auto;
 }
 .section-privacy__contents-border {
-  height: 3px;
+  height: 0.3rem;
   width: 100%;
-  background-color: #E6E6E6;
+  background-color: #E9F2F8;
   position: relative;
 }
 .section-privacy__contents-border::before {
@@ -1712,39 +1821,307 @@ html body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3px;
-  width: 20px;
+  height: 0.3rem;
+  width: 2rem;
   background-color: #039CFC;
 }
 .section-privacy__contents-item {
-  padding-top: 70px;
-  padding-bottom: 90px;
+  padding-top: 7rem;
+  padding-bottom: 9rem;
 }
 @media only screen and (max-width: 768px) {
   .section-privacy__contents-item {
-    padding-top: 50px;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
   }
 }
-.section-privacy__contents-item h3 {
-  font-size: 30px;
-  line-height: 42px;
-  padding-bottom: 40px;
+.section-privacy__contents-item h2 {
+  font-size: 3rem;
+  line-height: 1.3;
+  padding-bottom: 3.8rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.2rem;
 }
 @media only screen and (max-width: 768px) {
-  .section-privacy__contents-item h3 {
-    font-size: 20px;
-    line-height: 36px;
-    padding-bottom: 40px;
+  .section-privacy__contents-item h2 {
+    font-size: 2.4rem;
+    padding-bottom: 4rem;
   }
 }
 .section-privacy__contents-item p {
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #1e1e1e;
+  line-height: 2.2 !important;
+  font-weight: 500;
   color: #676767;
 }
 @media only screen and (max-width: 768px) {
   .section-privacy__contents-item p {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+
+.mail-flow {
+  padding-bottom: 6rem;
+}
+.mail-flow p {
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #1e1e1e;
+  font-weight: 500;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .mail-flow p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mail-flow p {
+    text-align: left;
+  }
+}
+.mail-flow__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.6rem;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .mail-flow__flex {
+    gap: 3.3rem;
+  }
+}
+.mail-flow__flex-step {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mail-flow__flex-step.pageActive {
+  color: #039CFC;
+}
+@media only screen and (max-width: 768px) {
+  .mail-flow__flex-step {
+    font-size: 2rem;
+  }
+}
+.mail-flow__flex-arrow {
+  border-top: 0.5rem solid #039CFC;
+  border-right: 0.5rem solid #039CFC;
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+  .mail-flow__flex-arrow {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+
+.mail-form__container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container {
+    padding-top: 1rem;
+  }
+}
+.mail-form__container form {
+  display: block;
+}
+.mail-form__container form table {
+  display: block;
+  padding-bottom: 5rem;
+}
+.mail-form__container form tbody {
+  display: block;
+}
+.mail-form__container form tr {
+  display: block;
+  border-top: solid 0.2rem #F0F0F0;
+  padding: 4rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form tr {
+    padding: 3.4rem 0 4rem;
+  }
+}
+.mail-form__container form tr.last-tr {
+  padding-bottom: 3rem;
+  border-bottom: solid 0.2rem #F0F0F0;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form tr.last-tr {
+    padding-bottom: 4rem;
+  }
+}
+.mail-form__container form th {
+  display: inline-block;
+  max-width: 28rem;
+  width: 100%;
+  vertical-align: top;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.mail-form__container form th::after {
+  content: "必須";
+  position: absolute;
+  bottom: -2.6rem;
+  left: 0px;
+  padding: 0px 1.4rem 0.2rem;
+  background-color: #EF0C0C;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  border-radius: 0.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form th::after {
+    position: relative;
+    bottom: 0;
+    left: 0.8rem;
+  }
+}
+.mail-form__container form th.none-required::after {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form th {
+    padding-bottom: 1rem;
+  }
+}
+.mail-form__container form td {
+  display: inline-block;
+}
+.mail-form__container form td input, .mail-form__container form td textarea {
+  display: block;
+  height: 5rem;
+  width: 48rem;
+  border: solid #C3CDD6 0.1rem;
+  border-radius: 0.4rem;
+  background-color: #FAFAFA;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  letter-spacing: 0.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form td input, .mail-form__container form td textarea {
+    max-width: 48rem;
+    width: 100%;
+    height: 4rem;
+  }
+}
+.mail-form__container form td input::-moz-placeholder, .mail-form__container form td textarea::-moz-placeholder {
+  color: #C3CDD6;
+}
+.mail-form__container form td input::placeholder, .mail-form__container form td textarea::placeholder {
+  color: #C3CDD6;
+}
+.mail-form__container form td textarea {
+  height: 16rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.mail-form__container form p {
+  text-align: center;
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form p {
+    text-align: left;
+  }
+}
+.mail-form__container form p a {
+  color: #5D88DE;
+  text-decoration: underline;
+}
+.mail-form__container form .mail-form__button {
+  position: relative;
+  max-width: 36rem;
+  width: 100%;
+  margin: 4.2rem auto 0;
+}
+.mail-form__container form .mail-form__button input {
+  cursor: pointer;
+  background-color: #1e1e1e;
+  padding: 2rem 0;
+  width: 100%;
+  display: block;
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #1e1e1e;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form .mail-form__button input {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+.mail-form__container form .mail-form__button::after {
+  position: absolute;
+  content: "";
+  border-top: 0.3rem solid #fff;
+  border-right: 0.3rem solid #fff;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg) translateY(-50%);
+  right: 3rem;
+  top: 49%;
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form .mail-form__button::after {
+    height: 1rem;
+    width: 1rem;
+    top: 2.2rem;
+    right: 1.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mail-form__container form th {
+    display: block;
+  }
+  .mail-form__container form td {
+    display: block;
+  }
+  .mail-form__container form textarea {
+    display: block;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
