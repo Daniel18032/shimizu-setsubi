@@ -35,6 +35,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <link rel="prefetch" href="./achievements/index.html">
         <link rel="prefetch" href="./about/index.html">
@@ -275,23 +276,27 @@
                                 <div></div>
                             </a>
                         </div>
-                        <ul class="section-achievement__inner-image">
-                            <li class="image-item">
-                                <img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292">
-                            </li>
-                            <li class="image-item">
-                                <img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292">
-                            </li>
-                            <li class="image-item">
-                                <img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292">
-                            </li>
-                            <li class="image-item">
-                                <img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292">
-                            </li>
-                            <li class="image-item">
-                                <img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292">
-                            </li>
-                        </ul>
+                        <div class="swiper-area section-achievement__inner-image">
+                            <div class="swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-media img-cover"><img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-media img-cover"><img src="./assets/images/top/agility.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-media img-cover"><img src="./assets/images/top/generation.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-media img-cover"><img src="./assets/images/top/deadline.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-media img-cover"><img src="./assets/images/top/politeness.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                </div>
+                              </div><!-- /swiper-wrapper -->
+                            </div><!-- /swiper -->
+                          </div><!-- /swiper-area -->
                     </div>
                 </div>
             </section>
@@ -422,5 +427,7 @@
         <script src="./assets/js/common.js" defer></script>
         <script src="./assets/js/header.js" defer></script>
         <script src="./assets/js/background-image.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/js/swiper-original.js"></script>
     </body>
 </html>

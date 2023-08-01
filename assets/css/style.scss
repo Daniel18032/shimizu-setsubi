@@ -1018,6 +1018,7 @@ html{
     padding-top: 8rem;
     padding-bottom: 5.6rem;
     background-color: $color-bg;
+    overflow: hidden;
     &__inner {
         & .head {
             display: flex;
@@ -1052,6 +1053,11 @@ html{
             justify-content: space-between;
             align-items: end;
             padding-bottom: 5rem;
+            @include tablet {
+                flex-direction: column;
+                gap: 3rem;
+                padding-bottom: 2.6rem;
+            }
             p {
                 @include font-topParagraph;
                 font-weight: 600;
@@ -1106,79 +1112,99 @@ html{
         }
         &-image {
             display: flex;
-            width: 100vw;
+            // width: 100vw;
             position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            gap: vw(50);
-            justify-content: center;
+            margin-left: -24rem;
+            margin-right: -24rem;
+            @include tablet {
+                width: auto;
+                margin-left: -18rem;
+                margin-right: -18rem;
+            }
             .image-item {
-                border-radius: vw(4);
+                border-radius: 0.4rem;
                 overflow: hidden;
                 img {
                     height: 100%;
                     object-fit: cover;
                 }
             }
+            .swiper-wrapper {
+                transition-timing-function: linear;
+            }
         }
     }
 }
 .section-voice {
-    padding-top: vw(80);
-    padding-bottom: vw(86);
+    padding-top: 8rem;
+    padding-bottom: 8.6rem;
     background-color: $color-white;
     &__inner {
         & .head {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding-bottom: vw(10);
+            gap: 0.8rem;
+            padding-bottom: 1rem;
             @include tablet() {
-                padding-bottom: svw(28);
+                padding-bottom: 2.8rem;
             }
             &__border {
                 display: inline-block;
-                height: 1px;
-                width: vw(50);
+                height: 0.1rem;
+                width: 5rem;
                 background-color: $color-main;
                 @include tablet() {
-                    width: svw(50);
+                    width: 5rem;
                 }
             }
             &__title {
                 display: inline-block;
-                font-size: vw(18);
+                font-size: 1.8rem;
                 color: $color-main;
                 font-weight: 700;
-                letter-spacing: vw(1.6);
+                letter-spacing: 0.16rem;
                 line-height: 1.6;
                 @include tablet() {
-                    font-size: svw(18);
-                    letter-spacing: svw(1.6);
+                    font-size: 1.8rem;
+                    letter-spacing: 0.16rem;
                 }
             }
         }
         h2 {
             @include font-topHeading;
             color: $color-font-normal;
-            padding-bottom: vw(40);
+            padding-bottom: 4rem;
         }
         &-flex {
             display: flex;
             justify-content:flex-start;
-            gap: vw(50);
+            gap: 5rem;
             align-items: end;
+            @include tablet {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 3.4rem;
+            }
             .voice-image {
-                width: vw(300);
-                height: vw(200);
+                width: 30rem;
+                height: 20rem;
+                @include tablet {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 3 / 2;
+                }
             }
             .voice-message {
                 @include font-topParagraph;
                 font-weight: 500;
                 color: $color-font-normal;
                 list-style: inside;
+            }
+            p {
+                @include tablet() {
+                    font-size: 1.6rem;
+                    line-height: 2;
+                }
             }
         }
     }
