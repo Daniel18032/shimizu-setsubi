@@ -12,14 +12,14 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="清水設備">
         <meta property="og:description" content="清水設備は、〜〜〜">
-        <meta property="og:url" content="https://www.example.com/">
-        <meta property="og:image" content="https://www.example.com/assets/images/ogp_image.jpg">
+        <meta property="og:url" content="http://xs692950.xsrv.jp/test/shimizu-setsubi/">
+        <meta property="og:image" content="http://xs692950.xsrv.jp/test/shimizu-setsubi/assets/images/ogp_image.jpg">
 
         <!-- Twitter用 -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="清水設備">
         <meta name="twitter:description" content="清水設備は、〜〜〜">
-        <meta name="twitter:image" content="https://www.example.com/assets/images/ogp_image.jpg">
+        <meta name="twitter:image" content="http://xs692950.xsrv.jp/test/shimizu-setsubi/assets/images/ogp_image.jpg">
         <meta property="og:locale" content="ja_JP">
 
         <!-- テスト公開用 -->
@@ -34,7 +34,7 @@
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <link rel="prefetch" href="./achievements/index.html">
@@ -47,8 +47,8 @@
             <h1 class="header__logo">
                 <a class="header__logo-button pc-logo" href="./index.html">
                     <span id="topLogo" class="header__logo-button-title">
-                        <img class="pc" src="../assets/images/header/logo.png" alt="ロゴ画像">
-                        <img class="tablet" src="../assets/images/header/logo-mobile.png" alt="ロゴ画像">
+                        <img class="pc" src="./assets/images/header/logo.png" alt="ロゴ画像">
+                        <img class="tablet" src="./assets/images/header/logo-mobile.png" alt="ロゴ画像">
                     </span>
                 </a>
             </h1>
@@ -135,13 +135,18 @@
                             </div>
                         </div>
                         <div class="gnav__nav-contact">
-                            <div class="telephone-container-flex-number">
-                                <div class="telephone-container-flex-number-box">
-                                    <div></div>
-                                    電話で問い合わせる
-                                    Tel: 
-                                    055(215)0236 
-                                     (営業時間 8:00〜17:00)
+                            <div class="gnav__nav-contact-box">
+                                <div class="nav-contact-box">
+                                    <p class="nav-contact-box-title">電話で問い合わせる</p>
+                                    <p>
+                                        Tel: 
+                                        055(215)0236 
+                                        <span> (営業時間 8:00〜17:00)</span>
+                                    </p>
+                                </div>
+                                <div class="nav-contact-box">
+                                    <p class="nav-contact-box-title">メールで問い合わせる</p>
+                                    <a href="./contact/index.html">メールフォームを開く</a>
                                 </div>
                             </div>
                         </div>
@@ -151,11 +156,11 @@
             </div>
         </header>
         <main class="main">
-            <div class="mv fixed-bg">
+            <div class="mv">
                 <div class="mv__inner">
                     <div class="mv__inner-title">
                         <div class="mv__inner-title-main">
-                            <span>豊富な経験</span>と<span>確かな技術</span>で、<br>
+                            <span class="title-border">豊富な経験</span>と<span class="title-border">確かな技術</span>で、<br>
                             安心安全な施工を<br class="tablet">心がけています。
                         </div>
                     </div>
@@ -198,8 +203,8 @@
                                 人手不足且つ高齢化が進んでいる業界内で、当社は若い二人で事業を行っておりフットワーク良く、小回りが利く仕事をしています。
                             </p>
                         </div>
-                        <div class="section-strengths__box-image even">
-                            <img src="./assets/images/top/agility.jpg" alt="蛇口の写真" width="780" height="780">
+                        <div class="section-strengths__box-image even agility fixed-bg">
+                            <!-- <img src="./assets/images/top/agility.jpg" alt="蛇口の写真" width="780" height="780"> -->
                         </div>
                     </li>
                     <li class="section-strengths__box">
@@ -217,8 +222,8 @@
                                 水道は生活必需品のため、材料に使うパイプや接着剤は、丈夫で健康に外を与えないものに注意しています。
                             </p>
                         </div>
-                        <div class="section-strengths__box-image">
-                            <img src="./assets/images/top/generation.jpg" alt="蛇口の写真" width="780" height="780">
+                        <div class="section-strengths__box-image generation fixed-bg">
+                            <!-- <img src="./assets/images/top/generation.jpg" alt="蛇口の写真" width="780" height="780"> -->
                         </div>
                     </li>
                     <li class="section-strengths__box">
@@ -253,8 +258,8 @@
                                 頂いた仕事は感謝の気持ちを忘れず、丁寧に正確に誠実に対応し、工事後の整地や、廃棄物の処理にも気を遣い、きれいな状態で終了させます。
                             </p>
                         </div>
-                        <div class="section-strengths__box-image">
-                            <img src="./assets/images/top/politeness.jpg" alt="蛇口の写真" width="780" height="780">
+                        <div class="section-strengths__box-image politeness fixed-bg">
+                            <!-- <img src="./assets/images/top/politeness.jpg" alt="蛇口の写真" width="780" height="780"> -->
                         </div>
                     </li>
                 </ul>
@@ -362,9 +367,9 @@
                 <div class="footer__container">
                     <div class="footer__container-box">
                         <div class="footer__container-box-company">
-                            <div class="footer__container-box-company-name">
+                            <a class="footer__container-box-company-name" href="./index.html">
                                 <img src="./assets/images/footer/logo_footer.png" alt="ロゴ画像">
-                            </div>
+                            </a>
                             <div class="footer__container-box-company-number">
                                 <span>〒400-0118</span><br>
                                 <span>山梨県甲斐市竜王2262</span><br>
@@ -373,31 +378,31 @@
                         </div>
                         <ul class="footer__container-box-anker">
                             <li class="footer__container-box-anker-item">
-                                <a href="./index.html" target="_blank">
+                                <a href="./index.html">
                                     <span class="footer__container-box-anker-item-circle"></span>
                                     <span class="footer__container-box-anker-item-name">トップ</span>
                                 </a>
                             </li>
                             <li class="footer__container-box-anker-item">
-                                <a href="./achievements/index.html" target="_blank">
+                                <a href="./achievements/index.html">
                                     <span class="footer__container-box-anker-item-circle"></span>
                                     <span class="footer__container-box-anker-item-name">施工実績</span>
                                 </a>
                             </li>
                             <li class="footer__container-box-anker-item">
-                                <a href="./about/index.html" target="_blank">
+                                <a href="./about/index.html">
                                     <span class="footer__container-box-anker-item-circle"></span>
                                     <span class="footer__container-box-anker-item-name">会社案内</span>
                                 </a>
                             </li>
                             <li class="footer__container-box-anker-item">
-                                <a href="./recruitment/index.html" target="_blank">
+                                <a href="./recruitment/index.html">
                                     <span class="footer__container-box-anker-item-circle"></span>
                                     <span class="footer__container-box-anker-item-name">採用情報</span>
                                 </a>
                             </li>
                             <li class="footer__container-box-anker-item">
-                                <a href="./index.html#contact" target="_blank">
+                                <a href="./index.html#contact">
                                     <span class="footer__container-box-anker-item-circle"></span>
                                     <span class="footer__container-box-anker-item-name">お問い合わせ</span>
                                 </a>
@@ -419,11 +424,6 @@
             $("img.lazyload").lazyload();
         </script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/quicklink/2.0.0-alpha/quicklink.umd.js" defer></script>
-        <script>
-        window.addEventListener('load', () => {
-          quicklink.listen();
-        });
-        </script>
         <script src="./assets/js/common.js" defer></script>
         <script src="./assets/js/header.js" defer></script>
         <script src="./assets/js/background-image.js" defer></script>
