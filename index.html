@@ -47,8 +47,8 @@
             <h1 class="header__logo">
                 <a class="header__logo-button pc-logo" href="./index.html">
                     <span id="topLogo" class="header__logo-button-title">
-                        <img class="pc" src="./assets/images/header/logo.png" alt="ロゴ画像">
-                        <img class="tablet" src="./assets/images/header/logo-mobile.png" alt="ロゴ画像">
+                        <img class="pc lazyload" src="./assets/images/header/logo.png" data-src="./assets/images/header/logo.png" alt="ロゴ画像">
+                        <img class="tablet lazyload" src="./assets/images/header/logo-mobile.png" data-src="./assets/images/header/logo-mobile.png" alt="ロゴ画像">
                     </span>
                 </a>
             </h1>
@@ -58,25 +58,25 @@
                         <ul class="header__main-content-inner-items">
                             <li class="main-items__item pageActive">
                                 <a href="./index.html">
-                                    <span></span>
+                                    <span class="tablet"></span>
                                     <div>トップ</div>
                                 </a>
                             </li>
                             <li class="main-items__item item-store">
                                 <a href="./achievements/index.html">
-                                    <span></span>
+                                    <span class="tablet"></span>
                                     <div>施工実績</div>
                                 </a>
                             </li>
                             <li class="main-items__item">
                                 <a href="./about/index.html">
-                                    <span></span>
+                                    <span class="tablet"></span>
                                     <div>会社案内</div>
                                 </a>
                             </li>
                             <li class="main-items__item">
                                 <a href="./recruitment/index.html">
-                                    <span></span>
+                                    <span class="tablet"></span>
                                     <div>採用情報</div>
                                 </a>
                             </li>
@@ -84,7 +84,7 @@
                         <div class="header__main-content-inner-button">
                             <a href="./contact/index.html">
                                 お問い合わせ
-                                <img src="./assets/images/header/mail.png" width="240" height="145" alt="メールアイコン">
+                                <img class="lazyload" src="./assets/images/header/mail.png" data-src="./assets/images/header/mail.png" width="240" height="145" alt="メールアイコン">
                             </a>
                         </div>
                     </div>
@@ -95,6 +95,7 @@
                     <i></i>
                     <i></i>
                     <i></i>
+                    <span class="header__menu-closeText">閉じる</span>
                 </span>
             </button>
             <div id="header__gnav" class="header__gnav">
@@ -102,7 +103,7 @@
                     <nav class="gnav">
                         <div class="gnav__logo">
                             <a href="/">
-                                <img src="./assets/images/header/logo-mobile-white.png" alt="ロゴ画像">
+                                <img class="lazyload" src="./assets/images/header/logo-mobile-white.png" data-src="./assets/images/header/logo-mobile-white.png" alt="ロゴ画像">
                             </a>
                         </div>
                         <div class="gnav__main">
@@ -285,19 +286,19 @@
                             <div class="swiper">
                               <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="slide-media img-cover"><img src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                    <div class="slide-media img-cover"><img class="lazyload" src="./assets/images/top/skill.jpg" data-src="./assets/images/top/skill.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="slide-media img-cover"><img src="./assets/images/top/agility.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                    <div class="slide-media img-cover"><img class="lazyload" src="./assets/images/top/agility.jpg" data-src="./assets/images/top/agility.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="slide-media img-cover"><img src="./assets/images/top/generation.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                    <div class="slide-media img-cover"><img class="lazyload" src="./assets/images/top/generation.jpg" data-src="./assets/images/top/generation.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="slide-media img-cover"><img src="./assets/images/top/deadline.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                    <div class="slide-media img-cover"><img class="lazyload" src="./assets/images/top/deadline.jpg" data-src="./assets/images/top/deadline.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="slide-media img-cover"><img src="./assets/images/top/politeness.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
+                                    <div class="slide-media img-cover"><img class="lazyload" src="./assets/images/top/politeness.jpg" data-src="./assets/images/top/politeness.jpg" alt="施工実績のイメージ写真" width="292" height="292"></div>
                                 </div>
                               </div><!-- /swiper-wrapper -->
                             </div><!-- /swiper -->
@@ -315,7 +316,7 @@
                         <h2>お客様の声</h2>
                         <div class="section-voice__inner-flex">
                             <div class="voice-image">
-                                <img src="./assets/images/top/mv.jpeg" alt="お客様の声のイメージ画像" width="300" height="200">
+                                <img class="lazyload" src="./assets/images/top/mv.jpeg" data-src="./assets/images/top/mv.jpeg" alt="お客様の声のイメージ画像" width="300" height="200">
                             </div>
                             <div class="voice-message">
                                 <ul>
@@ -368,7 +369,7 @@
                     <div class="footer__container-box">
                         <div class="footer__container-box-company">
                             <a class="footer__container-box-company-name" href="./index.html">
-                                <img src="./assets/images/footer/logo_footer.png" alt="ロゴ画像">
+                                <img class="lazyload" src="./assets/images/footer/logo_footer.png" data-src="./assets/images/footer/logo_footer.png" alt="ロゴ画像">
                             </a>
                             <div class="footer__container-box-company-number">
                                 <span>〒400-0118</span><br>
@@ -419,7 +420,7 @@
         <a href="#" id="scroll-top">
         </a>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
         <script>
             $("img.lazyload").lazyload();
         </script>

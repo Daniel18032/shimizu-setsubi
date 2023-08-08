@@ -46,8 +46,8 @@
             <div class="header__logo">
                 <a class="header__logo-button pc-logo" href="../index.html">
                     <span id="topLogo" class="header__logo-button-title">
-                        <img class="pc" src="../assets/images/header/logo.png" alt="ロゴ画像">
-                        <img class="tablet" src="../assets/images/header/logo-mobile.png" alt="ロゴ画像">
+                        <img class="pc lazyload" src="../assets/images/header/logo.png" data-src="../assets/images/header/logo.png" alt="ロゴ画像">
+                        <img class="tablet lazyload" src="../assets/images/header/logo-mobile.png" data-src="../assets/images/header/logo-mobile.png" alt="ロゴ画像">
                     </span>
                 </a>
             </div>
@@ -91,7 +91,7 @@
                         <div class="header__main-content-inner-button">
                             <a href="../contact/index.html">
                                 お問い合わせ
-                                <img src="../assets/images/header/mail.png" width="240" height="145" alt="メールアイコン">
+                                <img class="lazyload" src="../assets/images/header/mail.png" data-src="../assets/images/header/mail.png" width="240" height="145" alt="メールアイコン">
                             </a>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
             <div class="header__fixed-button">
                 <a class="button-bottom button-telephone" href="../contact/index.html">
                     <span class="button-bottom__image">
-                        <img src="../assets/images/header/telephone.png" alt="受話器のアイコン" width="34" height="34">
+                        <img class="lazyload" src="../assets/images/header/telephone.png" data-src="../assets/images/header/telephone.png" alt="受話器のアイコン" width="34" height="34">
                     </span>
                     <span class="button-bottom__text">
                         電話で問い合わせる
@@ -115,7 +115,7 @@
                 </a>
                 <a class="button-bottom button-mail" href="../contact/index.html">
                     <span class="button-bottom__image button-mail__image">
-                        <img src="../assets/images/header/mail.png" alt="受話器のアイコン" width="34" height="34">
+                        <img src="../assets/images/header/mail.png" data-src="../assets/images/header/mail.png" alt="受話器のアイコン" width="34" height="34">
                     </span>
                     <span class="button-bottom__text">
                         メールで問い合わせる
@@ -127,7 +127,7 @@
                     <nav class="gnav">
                         <div class="gnav__logo">
                             <a href="/">
-                                <img src="../assets/images/header/logo-mobile-white.png" alt="ロゴ画像" width="47" height="29">
+                                <img class="lazyload" src="../assets/images/header/logo-mobile-white.png" data-src="../assets/images/header/logo-mobile-white.png" alt="ロゴ画像" width="47" height="29">
                             </a>
                         </div>
                         <div class="gnav__main">
@@ -281,7 +281,7 @@
                     <div class="footer__container-box">
                         <div class="footer__container-box-company">
                             <a class="footer__container-box-company-name" href="../index.html">
-                                <img src="../assets/images/footer/logo_footer.png" alt="ロゴ画像">
+                                <img class="lazyload" src="../assets/images/footer/logo_footer.png" data-src="../assets/images/footer/logo_footer.png" alt="ロゴ画像">
                             </a>
                             <div class="footer__container-box-company-number">
                                 <span>〒400-0118</span><br>
@@ -332,7 +332,7 @@
         <a href="#" id="scroll-top">
         </a>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
         <script>
             $("img.lazyload").lazyload();
         </script>
