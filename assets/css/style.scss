@@ -646,7 +646,7 @@ html{
                             opacity: 1;
                             color:  $color-base;
                             left: -2.4rem;
-                            top: 2.4rem;
+                            top: 2.5rem;
                             font-size: 1.1rem;
                         }
                     }
@@ -760,6 +760,7 @@ html{
             nav.gnav {
                 margin-left: 2.4rem;
                 margin-right: 2.4rem;
+                height: 100%;
                 .gnav {
                     &__logo {
                         border-bottom: 0.1rem solid $color-white;
@@ -809,10 +810,73 @@ html{
                                 padding: 2.6rem 1.2rem;
                                 margin-bottom: 1.2rem;
                                 &-title {
-                                    font-size: 1.4rem;
+                                    color: $color-white;
+                                    font-size: 1.6rem;
                                     line-height: 1.5;
+                                    padding-left: 3rem;
+                                    padding-bottom: 0.4rem;
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        height: 0.1rem;
+                                        width: 2.4rem;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background-color: $color-white;
+                                    }
+                                }
+                                &-text {
+                                    color: $color-white;
+                                    font-size: 1.6rem;
+                                    line-height: 1.7;
+                                    & .tel-number {
+                                        font-size: 2.4rem;
+                                        line-height: 1.2;
+                                        padding-left: 0.4rem;
+                                        letter-spacing: 0.1rem;
+                                    }
+                                    & .business-hours {
+                                        display: block;
+                                        font-size: 1.4rem;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                &-button {
+                                    background-color: $color-white;
+                                    height: 4.4rem;
+                                    width: 22.7rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    margin-top: 1.4rem;
+                                    color: $color-nav-box;
+                                    font-size: 1.4rem;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    position: relative;
+                                    padding-bottom: 0.2rem;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        border-top: 0.3rem solid $color-nav-box;
+                                        border-right: 0.3rem solid $color-nav-box;
+                                        width: 1rem;
+                                        height: 1rem;
+                                        -webkit-transform: rotate(45deg) translateY(-50%);
+                                        transform: rotate(45deg) translateY(-50%);
+                                        right: 2rem;
+                                        top: 48%;
+                                    }
                                 }
                             }
+                        }
+                        &-copyright {
+                            font-size: 1rem;
+                            color: #B5B5B5;
+                            padding-top: 4rem;
                         }
                     }
                 }
@@ -903,7 +967,6 @@ html{
     width: 100%;
     height: 100vh;
     max-height: 70rem;
-    background-color: $color-main;
     background-image: url(../images/top/mv.jpg);
     background-position: center;
     background-size: cover;
@@ -927,7 +990,7 @@ html{
                 @include tablet() {
                     font-size: 2.4rem;
                     white-space:nowrap;
-                    padding-top: 26%;
+                    padding-top: 34%;
                     padding-left: 2.4rem;
                 }
                 span {
@@ -2378,7 +2441,7 @@ html{
                     @include tablet{
                         height: 1rem;
                         width: 1rem;
-                        top: 2.2rem;
+                        top: 3.3rem;
                         right: 1.9rem;
                     }
                 }

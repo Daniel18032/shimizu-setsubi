@@ -102,6 +102,7 @@
                     <i></i>
                     <i></i>
                     <i></i>
+                    <span class="header__menu-closeText">閉じる</span>
                 </span>
             </button>
             <div class="header__fixed-button">
@@ -160,20 +161,23 @@
                             </div>
                         </div>
                         <div class="gnav__nav-contact">
-                            <div class="telephone-container-flex-number">
-                                <div class="business-hours">営業時間：月〜土 8:00〜18:00<br>
-                                <span>※TEL.の番号はタップで発信できます</span></div>
-                                <div class="telephone-container-flex-number-box">
-                                    <div>
-                                        <span class="type-wrapper orange-wrapper">TEL.</span>
-                                        <span class="orange-number"><a href="0478-79-0043">0478-79-0043</a></span>
-                                    </div>
-                                    <div>
-                                        <span class="type-wrapper orange-wrapper-reverse">FAX.</span>
-                                        <span class="orange-number">0478-86-2808</span>
-                                    </div>
+                            <div class="gnav__nav-contact-box">
+                                <div class="nav-contact-box">
+                                    <p class="nav-contact-box-title">電話で問い合わせる</p>
+                                    <p class="nav-contact-box-text">
+                                        Tel: 
+                                        <span class="tel-number">055(215)0236</span> 
+                                        <span class="business-hours"> (営業時間 8:00〜17:00)</span>
+                                    </p>
+                                </div>
+                                <div class="nav-contact-box">
+                                    <p class="nav-contact-box-title">メールで問い合わせる</p>
+                                    <a class="nav-contact-box-button" href="../contact/index.html">メールフォームを開く</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="gnav__nav-copyright">
+                            <p>©︎ Shimizu Setsubi, Ltd.</p>
                         </div>
                     </nav>
                 </div>
@@ -242,16 +246,12 @@
                                             <td><input size="20" type="text" name="お名前" placeholder="例：清水 太郎" /></td>
                                         </tr>
                                         <tr>
-                                            <th>日中に繋がる電話番号</th>
+                                            <th class="none-required">日中に繋がる電話番号</th>
                                             <td><input size="30" type="tel" name="telNumber" pattern="\d{1,5}-\d{1,4}-\d{4,5}" placeholder="例：00-0000-0000"></td>
                                         </tr>
                                         <tr>
                                             <th>メールアドレス</th>
                                             <td><input size="30" type="text" name="Email" placeholder="例：example@shimizusetsubi.com"/></td>
-                                        </tr>
-                                        <tr>
-                                            <th class="none-required">年齢</th>
-                                            <td><input size="30" type="text" name="age" placeholder="例：26歳"/></td>
                                         </tr>
                                         <tr class="last-tr">
                                             <th>備考</th>

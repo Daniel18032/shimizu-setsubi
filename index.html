@@ -139,17 +139,20 @@
                             <div class="gnav__nav-contact-box">
                                 <div class="nav-contact-box">
                                     <p class="nav-contact-box-title">電話で問い合わせる</p>
-                                    <p>
+                                    <p class="nav-contact-box-text">
                                         Tel: 
-                                        055(215)0236 
-                                        <span> (営業時間 8:00〜17:00)</span>
+                                        <span class="tel-number">055(215)0236</span> 
+                                        <span class="business-hours"> (営業時間 8:00〜17:00)</span>
                                     </p>
                                 </div>
                                 <div class="nav-contact-box">
                                     <p class="nav-contact-box-title">メールで問い合わせる</p>
-                                    <a href="./contact/index.html">メールフォームを開く</a>
+                                    <a class="nav-contact-box-button" href="./contact/index.html">メールフォームを開く</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="gnav__nav-copyright">
+                            <p>©︎ Shimizu Setsubi, Ltd.</p>
                         </div>
                     </nav>
                 </div>
@@ -316,7 +319,7 @@
                         <h2>お客様の声</h2>
                         <div class="section-voice__inner-flex">
                             <div class="voice-image">
-                                <img class="lazyload" src="./assets/images/top/mv.jpeg" data-src="./assets/images/top/mv.jpeg" alt="お客様の声のイメージ画像" width="300" height="200">
+                                <img class="lazyload" src="./assets/images/top/mv.jpg" data-src="./assets/images/top/mv.jpeg" alt="お客様の声のイメージ画像" width="300" height="200">
                             </div>
                             <div class="voice-message">
                                 <ul>
@@ -420,15 +423,15 @@
         <a href="#" id="scroll-top">
         </a>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-        <script>
-            $("img.lazyload").lazyload();
-        </script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/quicklink/2.0.0-alpha/quicklink.umd.js" defer></script>
         <script src="./assets/js/common.js" defer></script>
         <script src="./assets/js/header.js" defer></script>
         <script src="./assets/js/background-image.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="./assets/js/swiper-original.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script>
+            $("img.lazyload").lazyload();
+        </script>
     </body>
 </html>

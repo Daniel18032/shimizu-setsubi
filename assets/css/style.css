@@ -420,7 +420,7 @@ html body {
     opacity: 1;
     color: #252A36;
     left: -2.4rem;
-    top: 2.4rem;
+    top: 2.5rem;
     font-size: 1.1rem;
   }
 }
@@ -534,6 +534,7 @@ html body {
 .header__gnav-inner nav.gnav {
   margin-left: 2.4rem;
   margin-right: 2.4rem;
+  height: 100%;
 }
 .header__gnav-inner nav.gnav .gnav__logo {
   border-bottom: 0.1rem solid #ffffff;
@@ -592,8 +593,70 @@ html body {
   margin-bottom: 1.2rem;
 }
 .header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-title {
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-left: 3rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-title::before {
+  content: "";
+  height: 0.1rem;
+  width: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-text .tel-number {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  padding-left: 0.4rem;
+  letter-spacing: 0.1rem;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-text .business-hours {
+  display: block;
   font-size: 1.4rem;
   line-height: 1.5;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-button {
+  background-color: #ffffff;
+  height: 4.4rem;
+  width: 22.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1.4rem;
+  color: #414C65;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+.header__gnav-inner nav.gnav .gnav__nav-contact .nav-contact-box-button::before {
+  content: "";
+  position: absolute;
+  border-top: 0.3rem solid #414C65;
+  border-right: 0.3rem solid #414C65;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg) translateY(-50%);
+  right: 2rem;
+  top: 48%;
+}
+.header__gnav-inner nav.gnav .gnav__nav-copyright {
+  font-size: 1rem;
+  color: #B5B5B5;
+  padding-top: 4rem;
 }
 .header__gnav-bg {
   background: rgba(0, 0, 0, 0.5);
@@ -675,7 +738,6 @@ html body {
   width: 100%;
   height: 100vh;
   max-height: 70rem;
-  background-color: #039CFC;
   background-image: url(../images/top/mv.jpg);
   background-position: center;
   background-size: cover;
@@ -704,7 +766,7 @@ html body {
   .mv__inner-title-main {
     font-size: 2.4rem;
     white-space: nowrap;
-    padding-top: 26%;
+    padding-top: 34%;
     padding-left: 2.4rem;
   }
 }
@@ -2615,7 +2677,7 @@ html body {
   .mail-form__container form .mail-form__button::after {
     height: 1rem;
     width: 1rem;
-    top: 2.2rem;
+    top: 3.3rem;
     right: 1.9rem;
   }
 }
