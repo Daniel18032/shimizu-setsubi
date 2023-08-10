@@ -28,6 +28,11 @@ a:visited {
   color: inherit;
 }
 
+@media only screen and (max-width: 860px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -738,7 +743,7 @@ html body {
   width: 100%;
   height: 100vh;
   max-height: 70rem;
-  background-image: url(../images/top/mv.jpg);
+  background-image: url(../images/top/mv.webp);
   background-position: center;
   background-size: cover;
 }
@@ -985,19 +990,19 @@ html body {
   }
 }
 .section-strengths__box-image.skill {
-  background-image: url(../images/top/skill-test.jpg);
+  background-image: url(../images/top/skill-test.webp);
 }
 .section-strengths__box-image.agility {
-  background-image: url(../images/top/agility.jpg);
+  background-image: url(../images/top/agility.webp);
 }
 .section-strengths__box-image.generation {
-  background-image: url(../images/top/generation.jpg);
+  background-image: url(../images/top/generation.webp);
 }
 .section-strengths__box-image.deadline {
-  background-image: url(../images/top/deadline-test.jpg);
+  background-image: url(../images/top/deadline-test.webp);
 }
 .section-strengths__box-image.politeness {
-  background-image: url(../images/top/politeness.jpg);
+  background-image: url(../images/top/politeness.webp);
 }
 .section-strengths__box-image.fixed-bg {
   background-position: center top;
@@ -1714,7 +1719,7 @@ html body {
 .mv-page {
   width: 100%;
   height: 46.2rem;
-  background-image: url(../images/top/mv.jpg);
+  background-image: url(../images/top/mv.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1725,16 +1730,16 @@ html body {
   }
 }
 .mv-page.mv-achievement {
-  background-image: url(../images/achievement/mv-achievement.jpg);
+  background-image: url(../images/achievement/mv-achievement.webp);
 }
 .mv-page.mv-about {
-  background-image: url(../images/about/mv-about.jpg);
+  background-image: url(../images/about/mv-about.webp);
 }
 .mv-page.mv-recruitment {
-  background-image: url(../images/recruit/mv-recruitment.jpg);
+  background-image: url(../images/recruit/mv-recruitment.webp);
 }
 .mv-page.mv-contactForm {
-  background-image: url(../images/contact/mv-contact.jpg);
+  background-image: url(../images/contact/mv-contact.webp);
 }
 .mv-page__wrapper {
   background-color: rgba(70, 80, 87, 0.3);
@@ -2571,7 +2576,7 @@ html body {
 .mail-form__container form td {
   display: inline-block;
 }
-.mail-form__container form td input, .mail-form__container form td textarea {
+.mail-form__container form td input, .mail-form__container form td textarea, .mail-form__container form td select {
   display: block;
   height: 5rem;
   width: 48rem;
@@ -2583,16 +2588,16 @@ html body {
   letter-spacing: 0.2rem;
 }
 @media only screen and (max-width: 860px) {
-  .mail-form__container form td input, .mail-form__container form td textarea {
+  .mail-form__container form td input, .mail-form__container form td textarea, .mail-form__container form td select {
     max-width: 48rem;
     width: 100%;
     height: 4rem;
   }
 }
-.mail-form__container form td input::-moz-placeholder, .mail-form__container form td textarea::-moz-placeholder {
+.mail-form__container form td input::-moz-placeholder, .mail-form__container form td textarea::-moz-placeholder, .mail-form__container form td select::-moz-placeholder {
   color: #C3CDD6;
 }
-.mail-form__container form td input::placeholder, .mail-form__container form td textarea::placeholder {
+.mail-form__container form td input::placeholder, .mail-form__container form td textarea::placeholder, .mail-form__container form td select::placeholder {
   color: #C3CDD6;
 }
 .mail-form__container form td textarea {

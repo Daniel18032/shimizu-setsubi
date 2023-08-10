@@ -297,6 +297,11 @@ cursor: pointer;
 a:visited {
 color: inherit;
 }
+@include tablet {
+    a[href^="tel:"]{
+        pointer-events: none;
+      }
+}
 img {
 object-fit: cover;
 width: 100%;
@@ -967,7 +972,7 @@ html{
     width: 100%;
     height: 100vh;
     max-height: 70rem;
-    background-image: url(../images/top/mv.jpg);
+    background-image: url(../images/top/mv.webp);
     background-position: center;
     background-size: cover;
     @include tablet() {
@@ -1162,19 +1167,19 @@ html{
                 }
             }
             &.skill {
-                background-image: url(../images/top/skill-test.jpg);
+                background-image: url(../images/top/skill-test.webp);
             }
             &.agility {
-                background-image: url(../images/top/agility.jpg);
+                background-image: url(../images/top/agility.webp);
             }
             &.generation {
-                background-image: url(../images/top/generation.jpg);
+                background-image: url(../images/top/generation.webp);
             }
             &.deadline {
-                background-image: url(../images/top/deadline-test.jpg);
+                background-image: url(../images/top/deadline-test.webp);
             }
             &.politeness {
-                background-image: url(../images/top/politeness.jpg);
+                background-image: url(../images/top/politeness.webp);
             }
             &.fixed-bg {
                 background-position: center top;
@@ -1742,7 +1747,7 @@ html{
 .mv-page {
     width: 100%;
     height: 46.2rem;
-    background-image: url(../images/top/mv.jpg);
+    background-image: url(../images/top/mv.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1750,16 +1755,16 @@ html{
         height: 37rem;
     }
     &.mv-achievement {
-        background-image: url(../images/achievement/mv-achievement.jpg);
+        background-image: url(../images/achievement/mv-achievement.webp);
     }
     &.mv-about {
-        background-image: url(../images/about/mv-about.jpg);
+        background-image: url(../images/about/mv-about.webp);
     }
     &.mv-recruitment {
-        background-image: url(../images/recruit/mv-recruitment.jpg);
+        background-image: url(../images/recruit/mv-recruitment.webp);
     }
     &.mv-contactForm {
-        background-image: url(../images/contact/mv-contact.jpg);
+        background-image: url(../images/contact/mv-contact.webp);
     }
     &__wrapper {
         background-color: rgba(70, 80, 87, 0.3);
@@ -2363,7 +2368,7 @@ html{
             }
             td {
                 display: inline-block;
-                input, textarea {
+                input, textarea, select {
                     display: block;
                     height: 5.0rem;
                     width: 48rem;
